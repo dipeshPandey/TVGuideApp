@@ -11,14 +11,15 @@ import java.util.Collection;
 public class ChannelDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long channelDetailsId;
+    private Long id;
     private String coverage;
     // one to many mapping for region
     private String region;
     private String type;
     private String Address;
     private String channelDescription;
-//    @JoinColumn(name="channel_fk")
-    @ManyToOne
+    @JoinColumn(name="channel_fk")
+    @OneToOne
     private Channel channelId;
+
 }

@@ -12,6 +12,7 @@ public class Channel {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long channelId;
     private String channelName;
+    private Boolean isActive;
 
     public Channel() {
     }
@@ -30,5 +31,13 @@ public class Channel {
 
     public void setChannelName(String channelName) {
         this.channelName = channelName;
+    }
+
+    public Boolean getActive() {
+        return isActive;
+    }
+
+    public void setActive(Boolean active) {
+        isActive = active;
     }
 }

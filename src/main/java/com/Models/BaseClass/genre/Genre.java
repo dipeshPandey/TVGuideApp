@@ -1,4 +1,4 @@
-package com.Primitive.genre;
+package com.Models.BaseClass.genre;
 
 /**
  * Created by mepesh on 10/26/2017.
